@@ -40,7 +40,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f5f9fc;
+  --background-color: #f5fcfb;
   --surface-color: #ffffff;
 }
 
@@ -756,7 +756,7 @@ section,
   transform: translate(-50%, -50%);
   width: 122px;
   height: 66px;
-  background: url(../img/section-title-bg.png) no-repeat;
+  background: url(../img/section-title-bg1.png) no-repeat;
   z-index: -1;
 }
 
