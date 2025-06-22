@@ -271,8 +271,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Contact Us</h2>
+        <p>Contact us now for a complimentary quote tailored just for you.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -316,44 +316,51 @@
           <div class="col-lg-7">
             <form id="contact-form" action="#" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
+
                 <div class="col-md-6">
-                  <label for="first-name-field" class="pb-2">First Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required>
+                  <label for="first-name-field" class="pb-2">First Name &nbsp;<sup style="color: red;">*</sup></label>
+                  <input type="text" name="first-name" id="first-name-field" class="form-control" required>
                 </div>
 
                 <div class="col-md-6">
-                  <label for="last-name-field" class="pb-2">Last Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required>
+                  <label for="last-name-field" class="pb-2">Last Name &nbsp;<sup style="color: red;">*</sup></label>
+                  <input type="text" name="last-name" id="last-name-field" class="form-control" required>
                 </div>
 
                 <div class="col-md-6">
                   <label for="phone-field" class="pb-2">Phone</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required>
+                  <input type="text" name="phone" id="phone-field" class="form-control" placeholder="ex: 0412345678"
+                    pattern="^\d{6}|^\d{10}$"
+                    title="Enter a 10-digit phone number with no spaces or symbols">
                 </div>
 
                 <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required>
+                  <label for="email-field" class="pb-2">Your Email &nbsp;<sup style="color: red;">*</sup></label>
+                  <input type="email" name="email" id="email-field" class="form-control" required
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    title="Enter a valid email address (e.g., yourname@example.com)" placeholder="you@example.com">
                 </div>
 
                 <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required>
+                  <label for="subject-field" class="pb-2">Subject &nbsp;<sup style="color: red;">*</sup></label>
+                  <input type="text" name="subject" id="subject-field" class="form-control" required>
                 </div>
 
                 <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
+                  <label for="message-field" class="pb-2">Message &nbsp;<sup style="color: red;">*</sup></label>
+                  <textarea name="message" id="message-field" rows="10" class="form-control" required></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
                   <div class="loading" style="display: none;">Loading</div>
                   <div class="error-message" style="display: none; color: white;"></div>
-                  <div class="sent-message" style="display: none; color: white;">Your message has been sent. <br/> We will get in touch with you soon. Thank you!
+                  <div class="sent-message" style="display: none; color: white;">
+                    Your message has been sent. <br /> We will get in touch with you soon. Thank you!
                   </div>
 
                   <button type="submit">Send Message</button>
                 </div>
+
               </div>
             </form>
           </div>
