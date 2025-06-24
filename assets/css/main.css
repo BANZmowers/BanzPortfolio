@@ -168,7 +168,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
+  max-height: 45px;
   margin-right: 8px;
 }
 
@@ -176,12 +176,16 @@ h6 {
   font-size: 26px;
   margin: 0;
   font-weight: 700;
-  color: var(--heading-color);
+  color: #5ab825;
   text-transform: uppercase;
 }
 
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+.scrolled .header .logo h1 {
+  color: white;
 }
 
 /* Global Header on Scroll
@@ -447,8 +451,11 @@ h6 {
 }
 
 .footer .footer-about .logo img {
-  max-height: 40px;
+  max-height: 80px;
   margin-right: 6px;
+  max-width: 150px; 
+  width: 100%;     
+  
 }
 
 .footer .footer-about .logo span {
@@ -802,19 +809,30 @@ section,
 
 .hero h2 {
   margin: 0;
-  font-size: 70px;
-  font-weight: 800;
-  line-height: 56px;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 70px;
   text-transform: uppercase;
   text-shadow: -1px 0 2px #2f5a50;
+}
+
+.hero-heading-box {
+  background: rgba(255, 255, 255, 0.01); 
+  backdrop-filter: blur(2px);          
+  -webkit-backdrop-filter: blur(10px);   
+  border-radius: 12px;
+  padding: 60px 70px;
+  display: inline-block;
+  color: #fff;                          
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .hero p {
   color: var(--default-color);
   margin: 10px 0 0 0;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   text-shadow: -1px 0 2px #2f5a50;
 }
@@ -856,7 +874,7 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about{
-  background-color: #f1fcf7;
+  background-color: #e9f8f1;
 }
 .about .content h3 {
   font-weight: 700;
@@ -1066,13 +1084,15 @@ section,
   border-radius: 5px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid var(--contrast-color);
+  border: 1px solid var(--contrast-color);
   color: var(--contrast-color);
 }
 
 .call-to-action .cta-btn:hover {
-  background: var(--accent-color);
-  border: 2px solid var(--accent-color);
+  background: white;
+  border: 1px solid var(--accent-color);
+  color: #5ab825;
+  font-weight: 700;
 }
 
 /*--------------------------------------------------------------
