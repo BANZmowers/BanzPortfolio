@@ -306,6 +306,56 @@ h6 {
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 10000;
+  }
+
+  .navmenu {
+    position: relative;
+    z-index: 10000;
+  }
+
+  .navmenu ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 100px 15px 30px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+  }
+
+  .navmenu ul li {
+    margin-bottom: 7px;
+  }
+
+  .navmenu ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .navmenu ul li a {
+    color: #5ab825;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-nav-active .navmenu ul {
+    display: block;
+  }
+}
+/* 
+
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
     line-height: 0;
@@ -428,7 +478,7 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Global Footer
